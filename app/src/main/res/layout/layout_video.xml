@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc6633"
+    tools:context=".VideoActivity">
+<FrameLayout
+    android:id="@+id/fram"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true">
+    <VideoView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoview"
+/>
+</FrameLayout>
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/fram"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="#ff6633"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titleVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Anh Ở Đây Mà - Đức Phúc"
+            android:textColor="#fff"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleLayout"
+        android:layout_margin="10dp"
+        android:divider="#ff6633"
+        android:dividerHeight="2dp">
+
+    </ListView>
+
+</RelativeLayout>
